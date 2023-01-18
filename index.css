@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#titulo {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 5rem;
+}
+
+#titulo span {
+  background-color: #271A45;
+  color: #D9CDF7;
+  display: flex;
+  justify-content: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
+}
+
+/*BOX PRINCIPAL*/
+.container {
+  display: flex;
+  align-items: center;
+  background-color: #D9CDF7;
+  width: 60vw;
+  height: 498px;
+  border-radius: 10px;
+  margin: 100px auto;
+}
+
+/*SOFÁ*/
+.box-sofa {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sofaEstatico {
+  display: flex;
+  align-items: center;
+  width: 26rem;
+  height: 15.8rem;
+}
+
+.sofaGiro {
+  display: flex;
+  align-items: center;
+  width: 26rem;
+  height: 15.8rem;
+}
+
+.icones {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  margin-left: 17rem;
+  margin-top: 20px;
+
+}
+
+.icones button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/*TEXTO*/
+.texto {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0 auto 20px;
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-family: 'Crimson Pro', serif;
+  color: #271A45;
+  font-size: 32px;
+}
+
+.code {
+  color: #271A45;
+  font-size: 10px;
+  font-family: 'Lato Thin', sans-serif;
+  margin-bottom: 12px;
+}
+
+.valor {
+  font-size: 16px;
+  color: #271A45;
+  margin-top: 12px;
+}
+
+.adicionar {
+  color: #271A45;
+  width: 149px;
+  height: 32px;
+  background-color: inherit;
+  border: 0.5px solid #271A45;
+  border-radius: 999px;
+  padding: 8px 10px;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.adicionar:hover {
+  background-color: #271A45;
+  color: #D9CDF7;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 1250px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
